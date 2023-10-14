@@ -1,0 +1,144 @@
+{
+  "development": {
+    "browser": {
+      "beta": [
+        {
+          "username": "beta20@os.com",
+          "password": "Beta@123"
+        }
+      ],
+      "davita": [
+        {
+          "username": "davita20@os.com",
+          "password": "Davita@123"
+        }
+      ],
+      "parentControlBeta": [
+        {
+          "username": "beta100@os.com",
+          "password": "Beta@123"
+        }
+      ],
+      "parentControlDavita": [
+        {
+          "username": "davita100@os.com",
+          "password": "Davita@123"
+        }
+      ],
+      "accountDetailsBeta": [
+        {
+          "username": "beta500@os.com",
+          "password": "Beta@123"
+        }
+      ],
+      "accountDetailsDavita": [
+        {
+          "username": "davita700@os.com",
+          "password": "Davita@123"
+        }
+      ],
+      "changePinBeta": [
+        {
+          "username": "beta50@os.com",
+          "password": "Beta@123"
+        }
+      ],
+      "changePinDavita": [
+        {
+          "username": "davita50@os.com",
+          "password": "Davita@123"
+        }
+      ],
+      "watchLater": [
+        {
+          "username": "watchLater@os.com",
+          "password": "Onstream@123"
+        }
+      ]
+    },
+    "mobile": {
+      "beta": [
+        {
+          "username": "beta20@os.com",
+          "password": "Beta@123"
+        }
+      ],
+      "davita": [
+        {
+          "username": "davita20@os.com",
+          "password": "Davita@123"
+        }
+      ],
+      "parentControlBeta": [
+        {
+          "username": "beta100@os.com",
+          "password": "Beta@123"
+        }
+      ],
+      "parentControlDavita": [
+        {
+          "username": "davita100@os.com",
+          "password": "Davita@123"
+        }
+      ],
+      "changePasswordBeta": [
+        {
+          "username": "beta50@os.com",
+          "password": "Beta@123"
+        }
+      ],
+      "changePasswordDavita": [
+        {
+          "username": "davita50@os.com",
+          "password": "Davita@123"
+        }
+      ],
+      "accountDetailsBeta": [
+        {
+          "username": "beta500@os.com",
+          "password": "Beta@123"
+        }
+      ],
+      "accountDetailsDavita": [
+        {
+          "username": "davita700@os.com",
+          "password": "Davita@123"
+        }
+      ]
+    },
+    "fireTV": {
+      "beta": [
+        {
+          "username": "beta20@os.com",
+          "password": "Beta@123"
+        }
+      ],
+      "davita": [
+        {
+          "username": "davita20@os.com",
+          "password": "Davita@123"
+        }
+      ],
+      "prod": [
+        {
+          "username": "beta20@os.com",
+          "password": "Beta@123"
+        }
+      ]
+    },
+    "roku": {
+      "beta": [
+        {
+          "username": "beta20@os.com",
+          "password": "Beta@123"
+        }
+      ],
+      "prod": [
+        {
+          "username": "beta20@os.com",
+          "password": "Beta@123"
+        }
+      ]
+    }
+  }
+}

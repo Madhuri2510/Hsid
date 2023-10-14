@@ -1,0 +1,16 @@
+{
+  "clearAll":{"elementData":[{"using": "text", "value":"CLEAR SEARCH"}]},
+  "recentSearchLabel":{"elementData":[{"using": "tag", "value":"LabelListControl"}]},
+  "search":{"elementData":[{"using": "text", "value":"Search"}]},
+  "searchText":{"elementData":[{"using": "text", "value":""}]},
+  "labelControl":{"elementData":[{"using": "tag", "value":"LabelControl"}]},
+  "title":{"elementData":[{"using": "text", "value":""}]},
+  "infoView":{"elementData":[{"using": "tag", "value":"CommonInfoView"}]},
+  "watchNowButton":{"elementData":[{"using": "text", "value": "WATCH NOW"}]},
+  "SearchLiveChannelItem":{"elementData":[{"using": "tag", "value":"SearchLiveChannelItem"}]},
+  "recentSearchGroup": {"elementData":[{"using": "tag", "value":"LabelListItem"}]},
+  "SearchWrapperItem":{"elementData": [{"using":"tag","value":"SearchWrapperItem"}]},
+  "SearchForLiveContent":{"elementData": [{"using":"text","value":"Search for Live Content"}]},
+  "noSearchResult":{"elementData": [{"using": "attr", "attribute": "name", "value": "noSearchResultPanel"}]},
+  "errorDescription":{"elementData": [{"using": "attr", "attribute": "name", "value": "messageLabel"}]}
+}

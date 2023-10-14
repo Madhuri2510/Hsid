@@ -1,0 +1,19 @@
+{
+    "hamburgerMenuIcon": "//div[@id='app-nav-bar']/div/div/div/div",
+    "menuLocator": "((//*[@id='side-nav'])//*[local-name()='svg'])",
+    "searchIcon": "//span[text()='Search']",
+    "homeIcon": "//span[text()='Home']",
+    "watchIcon": "//span[text()='Watch']",
+    "onDemandIcon" : "//span[text()='On Demand']",
+    "tvGuideIcon": "//span[text()='TV Guide']",
+    "settingsIcon": "//span[text()='Settings']",
+    "hotelInfoIcon": "//span[text()='Hotel Info']",
+    "castIcon": "//span[text()='Cast']",
+    "popularOnDemandText": "//p[text()='Popular On Demand']",
+    "watchIconInHomePage": "//h3[text()='Watch']",
+    "swimlaneWidgets": "//*[contains(@data-testid ,'swimlane-widget')]",
+    "tvGuideAllChannels": "//button[text()='ALL CHANNELS']",
+    "onDemandTrendingContentText": "//p[text()='Trending Content']",
+    "appSettingsLink": "//span[text()='App Settings']",
+    "closeButtonInCast": "//button[@data-testid='closeIconButton']"
+}

@@ -1,0 +1,22 @@
+{
+  "searchBox": "//*[contains(@resource-id,'searchEditText')]",
+  "onDemandLabel": "//*[contains(@resource-id,'railTitle') and contains(@text,'On Demand')]",
+  "tvGuideLabel": "//*[contains(@resource-id,'railTitle') and contains(@text,'TV Guide')]",
+  "popularLabel": "//*[contains(@resource-id,'railTitle') and contains(@text,'Popular')]",
+  "keyBoardItemKey": "//*[contains(@resource-id,'key_')]",
+  "keyBoardItemKeyA": "//*[contains(@resource-id,'key_a')]",
+  "keyBoardItemKeyDelete": "//*[contains(@resource-id,'key_delete')]",
+  "keyBoardItemKeySpace": "//*[contains(@resource-id,'key_space')]",
+  "onDemandFirstTile": "(//*[contains(@resource-id,'Title') and contains(@text,'On Demand')]/following-sibling::android.widget.FrameLayout//*[contains(@resource-id,'widget')])[1]",
+  "tvGuideFirstTile": "(//*[contains(@resource-id,'Title') and contains(@text,'TV Guide')]/following-sibling::android.widget.FrameLayout//*[contains(@resource-id,'program_image')]/parent::android.view.ViewGroup)[1]",
+  "recentSearchFirstResult": "(//*[contains(@resource-id,'recentSearchesList')]/android.widget.TextView)[1]",
+  "recentSearchResult": "(//*[contains(@resource-id,'recentSearchesList')]/android.widget.TextView)",
+  "clearSearchBtn": "//android.widget.LinearLayout[contains(@resource-id,'clear_recent_search_button_layout')]",
+  "recentSearchesText": "//*[contains(@resource-id,'recentSearchesText') and contains(@text,'Recent Searches')]",
+  "warningImage": "//*[contains(@resource-id,'warningImage')]",
+  "errorTitle": "//*[contains(@resource-id,'errorTitle') and contains(@text,'No Results')]",
+  "errorDescription": "//*[contains(@resource-id,'errorDescription')]",
+  "searchItemsParent": "//*[contains(@resource-id,'searchItemsParent')]",
+  "keyIsFocused": "//*[contains(@resource-id,'key_",
+  "emptySearchBoxText": "//*[contains(@resource-id,'searchItemsParent')]"
+}

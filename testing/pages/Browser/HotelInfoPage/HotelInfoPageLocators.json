@@ -1,0 +1,13 @@
+{
+    "onStreamHotelLogo": "(//img[contains(@class,'home-logo')])[1]",
+    "swimlaneTitlesAll": "//*[@class='swimlane-container  MuiBox-root css-8r7a71']/div/p",
+    "hotelInfoIcon":"//*[@id='Community']",
+    "hamburgerMenuIcon": "//div[@id='app-nav-bar']/div/div/div/div",
+    "totalCarousels": "//ul[@class='hero-carousel--dots']",
+    "moreInfo": "(//*[contains(text(),'MORE INFORMATION')])[1]",
+    "more_info_texts": "(//div[contains(@class,'css-vn3w00')]/div | //div[contains(@class,'css-vn3w00')]/p)",
+    "titleOfMoreInfoCard": "(//*[@data-testid='CloseIcon']/parent::button/following-sibling::div/div/div)",
+    "subHeadingwithTextOfMoreInfoCard": "(//*[@data-testid='CloseIcon']/parent::button/following-sibling::div/div/p)"
+
+  }
+  

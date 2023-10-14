@@ -1,0 +1,82 @@
+{
+  "rowList": {
+    "elementData": [{"using": "attr", "attribute": "name", "value": "rowList"}]
+  },
+  "classicGuide": {
+    "elementData": [{"using": "tag", "value": "GuideGridClassic"}]
+  },
+  "tvGuideGrid": {
+    "elementData": [{"using": "tag", "value": "TVGuideGrid"}]
+  },
+  "tvGuideRow": {
+    "elementData": [{"using": "tag", "value": "TVGuideRow"}]
+  },
+  "infoCard": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "backgroundImage"}
+    ]
+  },
+  "progSchedule": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "metadataLabel"}
+    ]
+  },
+  "progDescription": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "descriptionLabel"}
+    ]
+  },
+  "title": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "titleLabel"}
+    ]
+  },
+  "watchNowButton": {"elementData": [{"using": "text", "value": "WATCH NOW"}]},
+  "timeLabelWatchNow": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "metadataLabel"}
+    ]
+  },
+  "channelLogos": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "iconChannel"}
+    ]
+  },
+  "timeScheduleBar": {
+    "elementData": [{"using": "attr", "attribute": "name", "value": "timeBar"}]
+  },
+  "favouritesToggleButton": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "favouriteToggleButton"}
+    ]
+  },
+  "guideGridClassic": {
+    "elementData": [{"using": "tag", "value": "guideGridClassic"}]
+  },
+
+  "loginDialog": {
+    "elementData": [{"using": "text", "value": "Login to View This Program"}]
+  },
+  "popUpPin": {
+    "elementData": [{"using": "text", "value": "Enter Your PIN Number"}]
+  },
+  "GuideFilterRowList": {
+    "elementData": [{"using": "tag", "value": "GuideFilterRowList"}]
+  },
+  "tvGuideRowHeader": {
+    "elementData": [{"using": "tag", "value": "TVGuideRowHeader"}]
+  },
+  "genreFilterTabs": {
+    "elementData": [{"using": "tag", "value": "GuideFilterRowItem"}]
+  },
+  "tvGuideCurrentProgmList": {
+    "elementData": [{"using": "attr", "attribute": "name", "value": "row_0"}]
+  },
+  "tvGuideTimeList": {
+    "elementData": [{"using": "attr", "attribute": "name", "value": "timeBarMarkers"}]
+  },
+  "tvGuideFocus": {
+    "elementData": [{"using": "attr", "attribute": "name", "value": "TV Guide"}]
+  }
+
+}

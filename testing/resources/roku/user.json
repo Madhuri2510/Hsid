@@ -1,0 +1,32 @@
+[
+  {
+    "username": "beta20@os.com",
+    "password": "Beta@123",
+    "type": "accountDetails"
+  },
+  {
+    "username": "beta20@os.com",
+    "password": "Beta@123",
+    "type": "changePin"
+  },
+  {
+    "username": "beta20@os.com",
+    "password": "Beta@123",
+    "type": "parentalLock"
+  },
+  {
+    "username": "beta20@os.com",
+    "password": "Beta@123",
+    "type": "beta"
+  },
+  {
+    "username": "beta20@os.com",
+    "password": "Beta@123",
+    "type": "accountDetailsDavita"
+  },
+  {
+    "username": "beta20@os.com",
+    "password": "Beta@123",
+    "type": "signIn"
+  }
+]

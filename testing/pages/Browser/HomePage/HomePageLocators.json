@@ -1,0 +1,5 @@
+{
+  "watchIconInHomePage": "//h3[text()='Watch']",
+  "businessLogo": "(//img[contains(@class,'home-logo')])[1]",
+  "swimlaneWidgets": "//*[contains(@data-testid ,'swimlane-widget')]"
+}

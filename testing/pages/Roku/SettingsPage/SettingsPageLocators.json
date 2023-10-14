@@ -1,0 +1,152 @@
+{
+  "app_settings": {"elementData": [{"using": "text", "value": "APP SETTINGS"}]},
+  "appSettings": {"elementData": [{"using": "text", "value": "APP SETTINGS"}]},
+  "faqs": {"elementData": [{"using": "text", "value": "FAQS"}]},
+  "legalAndAbout": {
+    "elementData": [{"using": "text", "value": "LEGAL & ABOUT"}]
+  },
+  "tvGuideFormat": {
+    "elementData": [{"using": "text", "value": "TV GUIDE FORMAT"}]
+  },
+  "timeFormat": {"elementData": [{"using": "text", "value": "TIME FORMAT"}]},
+  "temperatureFormat": {
+    "elementData": [{"using": "text", "value": "TEMPERATURE FORMAT"}]
+  },
+  "enableLargeFontSize": {
+    "elementData": [{"using": "text", "value": "ENABLE LARGE FONT SIZE"}]
+  },
+  "classicFormat": {"elementData": [{"using": "text", "value": "CLASSIC"}]},
+  "time12hFormat": {"elementData": [{"using": "text", "value": "12 HOUR"}]},
+  "time24hFormat": {"elementData": [{"using": "text", "value": "24 HOUR"}]},
+  "tempCelsiusFormat": {
+    "elementData": [{"using": "text", "value": "CELSIUS (°C)"}]
+  },
+  "tempFahrenheitFormat": {
+    "elementData": [{"using": "text", "value": "FAHRENHEIT (°F)"}]
+  },
+
+  "temperatureFahrenheitFormat": {
+    "elementData": [{"using": "text", "value": "°F"}]
+  },
+  "classicText": {"elementData": [{"using": "text", "value": "CLASSIC"}]},
+  "modernText": {"elementData": [{"using": "text", "value": "MODERN"}]},
+  "GuideRowHeaderClassic": {
+    "elementData": [{"using": "tag", "value": "GuideRowHeaderClassic"}]
+  },
+  "tvGuideTitle": {
+    "elementData": [{"using": "text", "value": "TV GUIDE FORMAT"}]
+  },
+  "timeTitle": {"elementData": [{"using": "text", "value": "TIME FORMAT"}]},
+  "temperatureTitle": {
+    "elementData": [{"using": "text", "value": "TEMPERATURE FORMAT"}]
+  },
+  "termsOfServicebutton": {
+    "elementData": [{"using": "text", "value": "TERMS OF SERVICE"}]
+  },
+  "privacyPolicybutton": {
+    "elementData": [{"using": "text", "value": "PRIVACY POLICY"}]
+  },
+  "about": {"elementData": [{"using": "text", "value": "ABOUT"}]},
+  "appVersionHeader": {
+    "elementData": [{"using": "text", "value": "App Version"}]
+  },
+  "appVersion": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "appVersion"}
+    ]
+  },
+  "deviceInformationHeader": {
+    "elementData": [{"using": "text", "value": "Device Information"}]
+  },
+  "deviceInformation": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "deviceInformation"}
+    ]
+  },
+  "contactHeader": {"elementData": [{"using": "text", "value": "Contact"}]},
+  "contact": {
+    "elementData": [{"using": "attr", "attribute": "name", "value": "contact"}]
+  },
+  "faqsLabel": {"elementData": [{"using": "text", "value": "FAQ"}]},
+  "faqsSettingsPanel": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "FaqsSettingsPanel"}
+    ]
+  },
+  "questionContents": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "questionLabel"}
+    ]
+  },
+  "answerContents": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "answerLabel"}
+    ]
+  },
+  "classicGuide": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "guideGridClassic"}
+    ]
+  },
+  "modernGuide": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "guideGridModern"}
+    ]
+  },
+  "format": {"elementData": [{"using": "text", "value": ""}]},
+  "timeLabel": {
+    "elementData": [{"using": "attr", "attribute": "name", "value": "label"}]
+  },
+  "timeBar": {"elementData": [{"using": "tag", "value": "SimpleLabelControl"}]},
+  "timeSports": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "leftMetadataLabel"}
+    ]
+  },
+  "time": {"elementData": [{"using": "tag", "value": "SimpleLabelControl"}]},
+  "termsOfServiceContent": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "tearmOfServiceContent"}
+    ]
+  },
+  "privacyPolicyContent": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "policyContent"}
+    ]
+  },
+  "zoomFeatureButton": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "zoomFeatureButton"}
+    ]
+  },
+  "timeFormatButton": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "timeFormatButton"}
+    ]
+  },
+  "temperatureFormatButton": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "temperatureFormatButton"}
+    ]
+  },
+  "enableLargeFontSizeToggleButton": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "valueLabel"}
+    ]
+  },
+  "timeButtonGroup": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "timeButtonGroup"}
+    ]
+  },
+  "temperatureButtonGroup": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "temperatureButtonGroup"}
+    ]
+  },
+  "navigationHeaderText": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "navigationHeaderText"}
+    ]
+  }
+}

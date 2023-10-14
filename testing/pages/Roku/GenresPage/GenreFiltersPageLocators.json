@@ -1,0 +1,19 @@
+{
+    "allChannels": {"elementData": [{"using": "text", "value": "ALL CHANNELS"}]},
+    "favorites": {"elementData": [{"using": "text", "value": "FAVOURITES"}]},
+    "sports": {"elementData": [{"using": "text", "value": "SPORTS"}]},
+    "movies": {"elementData": [{"using": "text", "value": "MOVIES"}]},
+    "news": {"elementData": [{"using": "text", "value": "NEWS"}]},
+    "kids": {"elementData": [{"using": "text", "value": "KIDS"}]},
+    "noFavoritesAdded": {"elementData": [{"using": "text", "value": "Uh oh! No Favorites added yet."}]},
+    "guideFirstTile": {
+        "elementData": [
+          {"using": "attr", "attribute": "name", "value": "cell_1"}
+        ]
+      },
+      "tvGuideGenreFilters" : {
+        "elementData": [
+          {"using": "attr", "attribute": "name", "value": "rowItemLabel"}
+        ]
+      }
+}

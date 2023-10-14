@@ -1,0 +1,152 @@
+{
+    "watchTile": {"elementData":[{"using": "text", "value": "Watch"}]},
+    "hotelInfoTile": {"elementData":[{"using": "text", "value": "Hotel Info"}]},
+    "searchTile": {"elementData":[{"using": "text", "value": "Search"}]},
+    "mystayTile": {"elementData":[{"using": "text", "value": "My Stay"}]},
+    "tvGuideTile": {"elementData":[{"using": "text", "value": "TV Guide"}]},
+    "settingsTile": {"elementData":[{"using": "text", "value": "Settings"}]},
+    "searchMenu": {
+        "elementData":[
+          { 
+            "using": "attr", 
+            "attribute": "uri", 
+            "value": "pkg:/images/leftNavIcon/search.png"
+          }
+        ]
+      },
+    "homeMenu": {
+      "elementData":[
+        { 
+          "using": "attr", 
+          "attribute": "uri", 
+          "value": "pkg:/images/leftNavIcon/home.png"
+        }
+      ]
+    },
+    "watchMenu": {
+      "elementData":[
+        { 
+          "using": "attr", 
+          "attribute": "uri", 
+          "value": "pkg:/images/NewNavIcon/watchPageIcon.png"
+        }
+      ]
+    },
+    "myStayMenu": {
+      "elementData":[
+        { 
+          "using": "attr", 
+          "attribute": "uri", 
+          "value": "pkg:/images/leftNavIcon/myStay.png"
+        }
+      ]
+    },
+    "hotelInfoMenu": {
+      "elementData":[
+        { 
+          "using": "attr", 
+          "attribute": "uri", 
+          "value": "pkg:/images/leftNavIcon/hotelInfo.png"
+        }
+      ]
+    },
+    "settingsMenu": {
+      "elementData":[
+        { 
+          "using": "attr", 
+          "attribute": "uri", 
+          "value": "pkg:/images/leftNavIcon/settings.png"
+        }
+      ]
+    },
+    "tvGuideMenu": {
+      "elementData":[
+        { 
+          "using": "attr", 
+          "attribute": "uri", 
+          "value": "pkg:/images/leftNavIcon/tvGuide.png"
+        }
+      ]
+    },
+    "navigationHeaderText": {
+      "elementData": [
+        { 
+          "using": "attr",
+          "attribute": "name", 
+          "value": "navigationHeaderText"
+        }
+      ]
+    },
+    "navigationMenuLeft": {
+      "elementData": [
+        {
+          "using": "attr", 
+          "attribute": "name", 
+          "value": "navigationMenuLeft"
+        }
+      ]
+    },
+    "watchFocused": {
+      "elementData": [
+        {
+          "using": "attr", 
+          "attribute": "name", 
+          "value": "Watch"
+        }
+      ]
+    },
+    "searchFocused": {
+      "elementData": [
+        {
+          "using": "attr", 
+          "attribute": "name", 
+          "value": "Search"
+        }
+      ]
+    },
+    "homeFocused": {
+      "elementData": [
+        {
+          "using": "attr", 
+          "attribute": "name", 
+          "value": "Home"
+        }
+      ]
+    },
+    "tvGuideFocused": {
+      "elementData": [
+        {
+          "using": "attr", 
+          "attribute": "name", 
+          "value": "TV Guide"
+        }
+      ]
+    },
+    "myStayFocused": {
+      "elementData": [
+        {
+          "using": "attr", 
+          "attribute": "name", 
+          "value": "My Stay"
+        }
+      ]
+    },
+    "settingsFocused": {
+      "elementData": [
+        {
+          "using": "attr", 
+          "attribute": "name", 
+          "value": "Settings"
+        }
+      ]
+    },
+    "hotelInfoFocused": {
+      "elementData": [
+        {
+          "using": "attr", 
+          "attribute": "name", 
+          "value": "Hotel Info"
+        }
+      ]
+    }
+  }

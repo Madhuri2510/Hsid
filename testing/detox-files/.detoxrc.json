@@ -1,0 +1,56 @@
+{
+  "testRunner": "jest",
+  "runnerConfig": "e2e/config.json",
+  "configurations": {
+    "androidTV": {
+      "type": "android.emulator",
+      "testBinaryPath": "../ten-foot/android/sling/build/outputs/apk/androidTest/prodSling/debug/sling-prod-sling-debug-androidTest.apk",
+      "binaryPath": "../ten-foot/android/sling/build/outputs/apk/prodSling/debug/sling-prod-sling-x86-debug.apk",
+      "build": "cd .. && cd ten-foot && react-native bundle --platform android  --entry-file index.js --bundle-output android/sling/src/main/assets/index.android.bundle --assets-dest android/sling/src/main/res && cd android && ./gradlew sling:assembleDebug sling:assembleAndroidTest -DtestBuildType=debug && cd .. && cd ..  && cd testing",
+      "device": {
+        "avdName": "Android_TV_1080p_API_29"
+      },
+      "name": "Android_TV_1080p_API_29"
+    },
+    "androidTv-ios": {
+      "type": "android.emulator",
+      "testBinaryPath": "../ten-foot/android/sling/build/outputs/apk/androidTest/prodSling/debug/sling-prod-sling-debug-androidTest.apk",
+      "binaryPath": "../ten-foot/android/sling/build/outputs/apk/prodSling/debug/sling-prod-sling-x86-debug.apk",
+      "build": "cd .. && cd ten-foot && react-native bundle --platform android  --entry-file index.js --bundle-output android/sling/src/main/assets/index.android.bundle --assets-dest android/sling/src/main/res && cd android && ./gradlew sling:assembleDebug sling:assembleAndroidTest -DtestBuildType=debug && cd .. && cd ..  && cd testing",
+      "device": {
+        "avdName": "Android_TV_1080p_API_27"
+      },
+      "name": "Android_TV_1080p_API_27"
+    },
+    "androidTv-ios-cicd": {
+      "type": "android.emulator",
+      "testBinaryPath": "../ten-foot/android/sling/build/outputs/apk/androidTest/prodSling/debug/sling-prod-sling-debug-androidTest.apk",
+      "binaryPath": "../ten-foot/android/sling/build/outputs/apk/prodSling/debug/sling-prod-sling-x86-debug.apk",
+      "build": "cd .. && cd ten-foot && react-native bundle --platform android  --entry-file index.js --bundle-output android/sling/src/main/assets/index.android.bundle --assets-dest android/sling/src/main/res && cd android && ./gradlew sling:assembleDebug sling:assembleAndroidTest -DtestBuildType=debug && cd .. && cd ..  && cd testing",
+      "device": {
+        "avdName": "Android_TV_1080p_API_27"
+      },
+      "name": "Android_TV_1080p_API_27"
+    },
+    "Android_TV_Device": {
+      "type": "android.attached",
+      "testBinaryPath": "../ten-foot/android/sling/build/outputs/apk/androidTest/prodSling/debug/sling-prod-sling-debug-androidTest.apk",
+      "binaryPath": "../ten-foot/android/sling/build/outputs/apk/prodSling/debug/sling-prod-sling-armeabi-v7a-debug.apk",
+      "build": "cd .. && cd ten-foot && react-native bundle --platform android  --entry-file index.js --bundle-output android/sling/src/main/assets/index.android.bundle --assets-dest android/sling/src/main/res && cd android && ./gradlew sling:assembleDebug sling:assembleAndroidTest -DtestBuildType=debug && cd .. && cd ..  && cd testing",
+      "device": {
+        "adbName": "(.)*"
+      },
+      "name": "(.)*"
+    },
+    "Android_TV_Device_testapk": {
+      "type": "android.attached",
+      "testBinaryPath": "../ten-foot/android/sling/build/outputs/apk/androidTest/prodSling/debug/sling-prod-sling-debug-androidTest.apk",
+      "binaryPath": "../ten-foot/android/sling/build/outputs/apk/prodSling/debug/sling-prod-sling-armeabi-v7a-debug.apk",
+      "build": "cd .. && cd ten-foot && react-native bundle --platform android  --entry-file index.js --bundle-output android/sling/src/main/assets/index.android.bundle --assets-dest android/sling/src/main/res && cd android && ./gradlew sling:assembleAndroidTest -DtestBuildType=debug && cd .. && cd ..  && cd testing",
+      "device": {
+        "adbName": "(.)*"
+      },
+      "name": "(.)*"
+    }
+  }
+}

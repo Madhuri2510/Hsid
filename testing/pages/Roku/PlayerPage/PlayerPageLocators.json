@@ -1,0 +1,19 @@
+{
+    "captionsBtn":{"elementData":[{"using": "attr", "attribute": "name", "value": "ccButton"}]},
+    "player_page":{"elementData":[{"using": "attr", "attribute": "name", "value": "videoPlayer"}]},
+    "seekBar":{"elementData":[{"using": "tag", "value":"VideoPlayerProgressBar"}]},
+    "home":{"elementData":[{"using": "attr", "attribute": "name", "value": "Home"}]},
+    "keyEvent":{"elementData":[{"using": "attr", "attribute": "name", "value": "KeyEventHandler"}]},
+    "positionTimer":{"elementData":[{"using": "attr", "attribute": "name", "value": "positionLabel"}]},
+    "mainVideo":{"elementData":[{"using": "attr", "attribute": "name", "value": "MainVideo"}]},
+    "videoLoadingPanel":{"elementData":[{"using": "attr", "attribute": "name", "value": "videoLoadingPanel"}]},
+    "titleName":{"elementData":[{"using": "attr", "attribute": "name", "value": "titleLabel"}]},
+    "channelLogo":{"elementData":[{"using": "attr", "attribute": "name", "value": "channelLogoPoster"}]},
+    "miniGuide":{"elementData":[{"using": "attr", "attribute": "name", "value": "miniGuideButton"}]},
+    "timerRunning":{"elementData":[{"using": "attr", "attribute": "name", "value": "remainingLabel"}]},
+    "homeView":{"elementData":[{"using": "text", "value": "Watch"}]},
+    "classicGuide":{"elementData":[{"using": "attr", "attribute": "name", "value": "guideGridClassic"}]},
+    "popUpPin":{"elementData":[{"using": "text", "value":"Enter Your PIN Number"}]},
+    "videoView":{"elementData":[{"using": "attr", "attribute": "name", "value": "VideoView"}]},
+    "liveTag":{"elementData":[{"using": "text", "value":"LIVE"}]}
+}

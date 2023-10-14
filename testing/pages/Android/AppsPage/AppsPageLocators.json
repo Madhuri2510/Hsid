@@ -1,0 +1,3 @@
+{
+  "onStreamPropertyLogo": "//android.widget.ImageView[contains(@resource-id, 'propertyLogo')]"
+}

@@ -1,0 +1,16 @@
+{
+  "homePageTileIcons": "//android.widget.TextView[contains(@text,'tileIconName')]",
+  "watchIcon": "//android.widget.TextView[contains(@text,'Watch')]",
+  "watchTile": "//android.widget.TextView[contains(@resource-id,'link_text') and contains(@text,'Watch')]",
+  "learnMoreButton": "//android.widget.Button[contains(@resource-id,'btn_learn_more')]",
+  "propertyLogo": "//android.widget.ImageView[contains(@resource-id, 'propertyLogo')]",
+  "date": "//android.widget.TextView[contains(@resource-id, 'date')]",
+  "time": "//android.widget.TextView[contains(@resource-id, 'time')]",
+  "backgroundImage": "//android.widget.ImageView[contains(@resource-id, 'background_image')]",
+  "welcomeMessageTitle": "//android.widget.TextView[contains(@resource-id,'welcomeMessageTitle')]",
+  "welcomeMessageDescription": "//android.widget.TextView[contains(@resource-id,'welcomeMessageDescription')]",
+  "welcomeMessageSubtitle": "//android.widget.TextView[contains(@resource-id,'welcomeMessageSubtitle')]",
+  "homePageCarousel": "//androidx.recyclerview.widget.RecyclerView[contains(@resource-id,'carousel_list')]",
+  "homePageWidgetRail": "//android.widget.FrameLayout[contains(@resource-id,'swim_lane')]",
+  "homePageTiles": "//android.widget.FrameLayout[contains(@resource-id,'card_container')]"
+}

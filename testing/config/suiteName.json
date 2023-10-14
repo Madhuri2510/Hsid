@@ -1,0 +1,14 @@
+{ 
+    "general":"general",
+    "playerControls":"playerControls",
+    "parentalLock":"parentalLock",
+    "accountDetails":"accountDetails",
+    "changePassword":"changePassword",
+    "changePin":"changePin",
+    "beta":"beta",
+    "prod":"prod",
+    "watchLater": "watchLater",
+    "accountDetailsDavita": "accountDetailsDavita",
+    "signIn": "signIn",
+    "deactivatedUserCred": "deactivatedUserCred"
+}

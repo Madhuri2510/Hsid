@@ -1,0 +1,77 @@
+default:
+  tags:
+    - dc-d-gp2-large
+stages:
+  - Test_automation
+  - mail-report
+
+  
+Test_automation:
+  resource_group: browser-test-automation
+  stage: Test_automation
+  tags:
+    - Onstream_automation_shell2
+  script:
+    - |-
+       "$CI_JOB_ID" >> prejobid;
+        git config --global user.email "rahul.r@dish.com";
+        git config --global user.name "rahul.r2";
+        git remote set-url --push origin https://oauth2:glpat-MHswy-xBwpEcRjLd74iD@gitlab.com/dish-cloud/dish-technology-and-strategy/dish-commercial-engineering/onstream-automation/onstream-automation.git;
+        cd testing;
+        IF ($Browser_ModuleR -ne 'null') { 
+          $Browser_ModuleR_array = $Browser_ModuleR.Split(","); 
+          for ($i = 0; $i -lt $Browser_ModuleR_array.length; $i ++) { 
+            Write-Host $Browser_ModuleR_array[$i]; 
+            $b = $Browser_ModuleR_array[$i]; 
+            (Get-Content testcases/OnStreamTestCases/${b}_test.js) -replace "Feature","xFeature" | Out-File -encoding ASCII testcases/OnStreamTestCases/${b}_test.js; 
+            } 
+          }
+        npm install;
+        yarn codecept-run-on-stream-mobile-browser-ls --grep '(?=.*p1)(?=.*browser)';
+        node mergeJsonFiles.js;
+        dir mochawesome-report;
+        mv mochawesome-report ../
+  artifacts:
+    paths:
+      - prejobid
+      - mochawesome-report
+
+mail-report:
+  resource_group: browser-test-automation
+  stage: mail-report
+  image: onstream-cmp.docker.imovetv.com/automate-mail-report:latest
+  dependencies:
+    - Test_automation
+  before_script:
+    - apt-get update && apt-get install -y curl git zip jq
+  script:
+    - ls
+    - cat prejobid
+    - jobid=`cat prejobid`
+    - jobidn=`echo $jobid | sed 's/\(.\{2\}\)//' | tr -d -c 0-9`
+    - echo "$jobidn"
+    - export report="${CI_PROJECT_URL}/-/jobs/$jobidn/artifacts/browse"
+    - echo $report
+    - git config --global user.email "rahul.r@dish.com"
+    - git config --global user.name "rahul.r2"
+    - git remote set-url --push origin https://oauth2:glpat-MHswy-xBwpEcRjLd74iD@gitlab.com/dish-cloud/dish-technology-and-strategy/dish-commercial-engineering/onstream-automation/onstream-automation.git
+    - env=`grep 'url' testing/codecept.browser.conf.js | awk '{print $2}' | sed "s/'//g" | sed 's/.watchdishtv.*//g' | sed 's/https:\/\///g'`;
+    - env="$(tr '[:lower:]' '[:upper:]' <<< ${env:0:1})${env:1}"
+    - echo $env
+    - mv mochawesome-report /app
+    - export reciever=$browser_reciever
+    - export cicd="CD PIPELINE"
+    - git clone -b test --single-branch https://oauth2:glpat-MHswy-xBwpEcRjLd74iD@gitlab.com/dish-cloud/dish-technology-and-strategy/dish-commercial-engineering/onstream-browser/onstream-ui-nextjs.git;
+    - version=`jq -r .version ./onstream-ui-nextjs/package.json`
+    - echo $version
+    - cd /app
+    - jq --arg browser_link $browser_analysis_link -c '.browser = $browser_link' ./email-report/reportLink.json > updatelink.json
+    - mv updatelink.json ./email-report/reportLink.json && rm -rf updatelink.json
+    - node sendMail.js "MOBILE BROWSER-LANDSCAPE MODE" $version | tee $CI_PROJECT_DIR/message.txt
+    - cd $CI_PROJECT_DIR
+    - |-
+        if grep -q -e "MOBILE BROWSER-LANDSCAPE MODE" message.txt; then
+          source gitlab/script.sh;
+          message=`cat message.txt`;
+          SendMessageToHangoutsChat "$message";  
+        fi

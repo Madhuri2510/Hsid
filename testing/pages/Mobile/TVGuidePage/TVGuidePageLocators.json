@@ -1,0 +1,22 @@
+{
+  "channelLogos": "(//*[@data-testid='cg-channel-logo'])",
+  "playButton": "(//*[@data-testid='cg-program-play'])",
+  "channelLanes": "(//*[@data-testid='cg-channel-lane'])",
+  "firstShow": "(//div[contains(@class,'channel-lanes')]/div/button/following-sibling::div/div)",
+  "playArrowIcons": "(//*[@data-testid='PlayArrowIcon'])",
+  "video": "//video",
+  "bitmovinPlayer": "#bitmovinplayer-video-dish-bitmovin-player",
+  "currentShowTitle": "(//div[@data-testid='cg-channel-lane']/div[2]/div[1]/div/p[1])",
+  "currentShowSubtitle": "(//div[@data-testid='cg-channel-lane']/div[2]/div[1]/div/p[2])",
+  "infoCardShowTitle": "//img[@alt='Program Image']/parent::div/div/div[1]",
+  "infoCardTimeRating": "//img[@alt='Program Image']/parent::div/div/div[2]",
+  "infoCardWatchNow": "//button[text()='WATCH NOW']",
+  "closeInfoCard": "//button[@aria-label='close']",
+  "timeScheduleBar": "//div[@id='timeline']",
+  "futureShowTitle": "(//div[@data-testid='cg-channel-lane']/div[2]/div[2]/div/p[1])",
+  "futureShowSubtitle": "(//div[@data-testid='cg-channel-lane']/div[2]/div[2]/div/p[2])",
+  "infoCardProgImage": "//img[@alt='Program Image']",
+  "firstChannelTitleInClassicFormat": "(//*[@data-testid='cg-program-title'])[1]",
+  "infoCardTimeAndRating": "//*[@data-testid='details-card-show-info']",
+  "infoCardDescription": "//*[@data-testid='details-card-description']"
+}

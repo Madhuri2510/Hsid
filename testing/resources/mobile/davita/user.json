@@ -1,0 +1,22 @@
+[
+    {
+        "username": "davita500@os.com",
+        "password": "Davita@123",
+        "type": "accountDetails"
+    },
+    {
+        "username": "davita50@os.com",
+        "password": "Davita@123",
+        "type": "changePin"
+    },
+    {
+        "username": "davita100@os.com",
+        "password": "Davita@123",
+        "type": "parentalLock"
+    },
+    {
+        "username": "davita20@os.com",
+        "password": "Davita@123",
+        "type": "beta"
+    }
+]

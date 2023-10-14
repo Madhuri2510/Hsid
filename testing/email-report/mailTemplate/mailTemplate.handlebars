@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 { font: normal 15px Segoe UI, Segoe WP; margin-bottom: 0px}
+      table { border: 1px solid #C0C0C0;width: 65%; font: normal 13px Segoe UI, Segoe WP; }
+      th { padding: 2px; margin: 10px;font-size: 16px;font-weight: 600 }
+      td { border: solid 1px #C0C0C0; color: #333; padding: 1px; font-size: 16px; margin: 10px }
+      caption { font: normal 15px Segoe UI, Segoe WP; }
+      a { font: normal 14px Segoe UI, Segoe WP; text-decoration: none; font-weight: bold }
+      p { font: normal 14px Segoe UI, Segoe WP; margin: 0px }
+    </style>
+  </head>
+  <body>
+    <h1>Hi,</h1>
+    <p>Please find below the execution report of OnStream Automation on <b>{{date}}</b>. Execution has been performed on the <b>{{platform}} platform</b>.</p>
+    <p>Detailed analysis of Execution: <a href={{link}}>{{platform}} Automation Report</a></p>
+    <table>
+      <caption style="margin: 10px 0px; font-weight:bold">Summary of {{platform}} Execution</caption>
+      <tr style='background-color: #DDEFEF; border: solid 1px #C0C0C0; color: #333; height: 30px; margin: 10px'>
+        <th>Module Name</th>
+        <th>Passed TCs</th>
+        <th>Failed TCs</th>
+        <th>Skipped TCs</th>
+        <th>Total TCs</th>
+      </tr>
+      {{#with resultStats}}
+        {{#each moduleName}}
+        <tr>
+          <td>
+            {{.}}
+          </td>
+          <td>{{lookup ../PassedTCs @index}}</td>
+          <td>{{lookup ../FailedTCs @index}}</td>
+          <td>{{lookup ../SkippedTCs @index}}</td>
+          <td>{{lookup ../TotalTCs @index}}</td>
+        </tr>
+        {{/each}}
+      {{/with}}
+      <tr style="font-weight:bold">
+        <td style="text-align:center"><b>Total</b></td>
+        <td>{{resultStats.TotalPassedTCs}}</td>
+        <td>{{resultStats.TotalFailedTCs}}</td>
+        <td>{{resultStats.TotalSkippedTCs}}</td>
+        <td>{{resultStats.SumOfTCs}}</td>
+      </tr>
+      <tr style="text-align:center; font-weight:bold">
+        <td>Pass Percentage</td>
+        <td colspan="4">{{resultStats.PassPercentage}}%</td>
+      </tr>
+    </table>
+
+<h1 style="font: normal 15px Segoe UI, Segoe WP;margin-top: 30px">
+    Thanks,
+</h1>
+<h1 style="font: normal 15px Segoe UI, Segoe WP;margin-top: 0px">
+    Team
+</h1>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "searchBox": "//input",
+  "onDemandLabel": "(//p[text()='On Demand'])[2]",
+  "tvGuideLabel": "(//p[text()='TV Guide'])[2]",
+  "playButton_": "//p[text()='TV Guide']/following-sibling::div/div/div/div/div/button",
+  "firstResultOfTvGuide": "(//p[text()='TV Guide']/following-sibling::div/div)[1]/div/div/div",
+  "popularLabel": "//p[text()='Popular On Demand']",
+  "closeDialog": "//*[@data-testid = 'CloseIcon']",
+  "recentSearch": "//span[text()='titleName']",
+  "clearAllButton": "//button[text()='Clear All']",
+  "dialogTitle": "//div[@role='dialog']/div/div/div[3]/div/p",
+  "dialogClassification": "//div[@role='dialog']/div/div/div[3]/div/p[2]",
+  "overview": "//div[@role='dialog']/div/div/div[3]/div/div/p[2]",
+  "recentSearchesTitle": "//p[text()='Recent Searches']",
+  "recentSearchResults": "//*[@data-testid = 'search-recent'][1]",
+  "recentSearchesLabel": "//*[text()='Recent Searches']",
+  "recentSearchResultsInPortraitMode": "//*[text()='Recent Searches']/parent::div/following-sibling::div[1]/button[index]",
+  "playButton": "//*[@id='body-container']/div[2]/div/div[1]/div[18]",
+  "searchLabel": "//p[@data-testid='search-widget-grid-title']",
+  "playButtonBrowser": "//*[@data-testid='PlayArrowIcon']/parent::button",
+  "firstResultOfOnDemand": "//p[text()='On Demand']/following-sibling::div/div[1]/div/div[2]",
+  "searchHeader": "//a[@href='/search/']"
+}

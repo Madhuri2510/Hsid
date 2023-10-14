@@ -1,0 +1,50 @@
+{
+    "watchTile": {"elementData":[{"using": "text", "value": "Watch"}]},
+    "loadingControls": {
+        "elementData": [
+          {"using": "attr", "attribute": "name", "value": "busySpinnerControl"}
+        ]
+    },
+    "loadingMessage": {
+        "elementData": [
+          {"using": "attr", "attribute": "name", "value": "loadingMessageLabel"}
+        ]
+    },
+    "homeViewMDU": {
+        "elementData": [{"using": "attr", "attribute": "uri", "value": "pkg:/images/leftNavIcon/home.png"}]
+    },
+    "homeViewHospitality": {
+        "elementData":[{"using": "text", "value": "Watch"}]
+    },
+    "homeViewHosp": {
+        "elementData": [{"using": "attr", "attribute": "uri", "value": "pkg:/images/LandingHomePage/backgroundGradient.png"}]
+    },
+    "time": {"elementData": [{"using": "tag", "value": "SimpleLabelControl"}]},
+    "date": {
+        "elementData": [{"using": "attr", "attribute": "name", "value": "dateLabel"}]
+    },
+    "propertyLogo": {
+        "elementData": [{"using": "attr", "attribute": "name", "value": "logoPoster"}]
+    },
+    "welcomeMessageTitle": {
+        "elementData": [{"using": "attr", "attribute": "name", "value": "titleLabel"}]
+    },
+    "welcomeMessageDescription": {
+        "elementData": [{"using": "attr", "attribute": "name", "value": "descriptionLabel"}]
+    },
+    "welcomeMessageSubtitle": {
+        "elementData": [{"using": "attr", "attribute": "name", "value": "subHeadLineLabel"}]
+    },
+    "homePageCarousel": {
+        "elementData": [{"using": "attr", "attribute": "name", "value": "carouselItems"}]
+    },
+    "homePageWidgetRail": {
+        "elementData": [{"using": "attr", "attribute": "name", "value": "deepLinkingRowlist"}]
+    },
+    "backgroundImage": {
+        "elementData": [{"using": "attr", "attribute": "name", "value": "backgroundPoster"}]
+    },
+    "homePageTiles": {
+        "elementData": [{"using": "attr", "attribute": "name", "value": "deepLinkingTitleLabel"}]
+    }
+}

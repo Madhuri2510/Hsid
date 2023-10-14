@@ -1,0 +1,22 @@
+[
+    {
+        "username": "beta500@os.com",
+        "password": "Beta@123",
+        "type": "accountDetails"
+    },
+    {
+        "username": "beta50@os.com",
+        "password": "Beta@123",
+        "type": "changePassword"
+    },
+    {
+        "username": "beta100@os.com",
+        "password": "Beta@123",
+        "type": "parentalLock"
+    },
+    {
+        "username": "beta20@os.com",
+        "password": "Beta@123",
+        "type": "beta"
+    }
+]

@@ -1,0 +1,153 @@
+{
+  "learnMore": {"elementData": [{"using": "text", "value": "LEARN MORE"}]},
+  "tvGuide": {"elementData": [{"using": "text", "value": "TV Guide"}]},
+  "settings": {"elementData": [{"using": "text", "value": "Settings"}]},
+  "home": {"elementData": [{"using": "text", "value": "Home"}]},
+  "tabs": {"elementData": [{"using": "text", "value": ""}]},
+  "menuTabs": {
+    "elementData": [{"using": "attr", "attribute": "uri", "value": ""}]
+  },
+  "carouselItems": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "carouselItems"}
+    ]
+  },
+  "app_settings": {"elementData": [{"using": "text", "value": "APP SETTINGS"}]},
+  "title": {"elementData": [{"using": "text", "value": ""}]},
+  "swimlane": {"elementData": [{"using": "text", "value": ""}]},
+  "swimlane2": {
+    "elementData": [{"using": "text", "value": "Community Information"}]
+  },
+  "swimlane3": {"elementData": [{"using": "text", "value": "For You"}]},
+  "carouselsDots": {
+    "elementData": [{"using": "tag", "value": "CarouselNavigationItem"}]
+  },
+  "Inside": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "contentGroup"}
+    ]
+  },
+  "player_page": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "videoPlayer"}
+    ]
+  },
+  "loadingControls": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "busySpinnerControl"}
+    ]
+  },
+  "loadingMessage": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "loadingMessageLabel"}
+    ]
+  },
+  "homeViewMDU": {
+    "elementData": [
+      {
+        "using": "attr",
+        "attribute": "uri",
+        "value": "pkg:/images/leftNavIcon/home.png"
+      }
+    ]
+  },
+  "homeViewHospitality": {
+    "elementData": [{"using": "text", "value": "Watch"}]
+  },
+  "homeViewHosp": {
+    "elementData": [
+      {
+        "using": "attr",
+        "attribute": "uri",
+        "value": "pkg:/images/LandingHomePage/backgroundGradient.png"
+      }
+    ]
+  },
+  "learnMoreInside": {
+    "elementData": [
+      {
+        "using": "text",
+        "value": "Define your Unique Lifestyle at Springs at Castle Rock"
+      }
+    ]
+  },
+  "tileLabel": {"elementData": [{"using": "text", "value": "TILE_TEXT"}]},
+  "watchNowBtn": {"elementData": [{"using": "text", "value": "WATCH NOW"}]},
+  "homepageTitle": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "titleLabel"}
+    ]
+  },
+  "searchView": {"elementData": [{"using": "text", "value": "Search"}]},
+  "cityLabel": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "cityLabel"}
+    ]
+  },
+  "messageLabel": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "messageLabel"}
+    ]
+  },
+  "temperatureGroup": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "temperatureGroup"}
+    ]
+  },
+  "weatherInWeekLayout": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "weatherInWeekLayout"}
+    ]
+  },
+  "okayBtn": {"elementData": [{"using": "text", "value": "OKAY"}]},
+  "advertLabel": {"elementData": [{"using": "text", "value": "ADVERT"}]},
+  "notificationHeading": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "headerLabel"}
+    ]
+  },
+  "subTitleLabel": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "subTitleLabel"}
+    ]
+  },
+  "swimlaneParent": {
+    "elementData": [{"using": "tag", "value": "swimlaneRowList"}]
+  },
+  "infoCard": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "CommonInfoView"}
+    ]
+  },
+  "navigationHeaderText": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "navigationHeaderText"}
+    ]
+  },
+  "HeroCarouselMoreInfoItem": {
+    "elementData": [{"using": "tag", "value": "HeroCarouselMoreInfoItem"}]
+  },
+  "HeroCarouselControl": {
+    "elementData": [{"using": "tag", "value": "HeroCarouselControl"}]
+  },
+  "AdvertCommonInfoSubView": {
+    "elementData": [{"using": "tag", "value": "AdvertCommonInfoSubView"}]
+  },
+  "ArticleCommonInfoSubView": {
+    "elementData": [{"using": "tag", "value": "ArticleCommonInfoSubView"}]
+  },
+  "liveLabel": {"elementData": [{"using": "text", "value": "LIVE"}]},
+  "propertyLogo": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "logoPoster"}
+    ]
+  },
+  "contentGroup": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "contentGroup"}
+    ]
+  },
+  "ArticleVideoCommonInfoSubView": {
+    "elementData": [{"using": "tag", "value": "ArticleVideoCommonInfoSubView"}]
+  }
+}

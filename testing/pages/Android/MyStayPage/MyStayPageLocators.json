@@ -1,0 +1,11 @@
+{
+  "onStreamPropertyLogo": "//android.widget.ImageView[contains(@resource-id, 'propertyLogo')]",
+  "headlineOfLearnMore": "//android.widget.TextView[contains(@resource-id,'title')]",
+  "subHeadingOfLearnMore": "//android.widget.TextView[contains(@resource-id,'subtitle')]",
+  "weatherLogoOnInfoCard": "//android.widget.ImageView[contains(@resource-id,'today_forecast_icon')]",
+  "advertiseTagOnInfoCard": "//android.widget.TextView[contains(@resource-id,'advertText')]",
+  "headlineOfNotificationTile": "//android.widget.TextView[contains(@resource-id,'title')]",
+  "headlineOfMoreInfoCard": "//android.widget.TextView[contains(@resource-id,'title')]",
+  "subHeadingOfMoreInfoCard": "//android.widget.TextView[contains(@resource-id,'subtitle')]",
+  "myStayMenu": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'My Stay')]/parent::android.view.ViewGroup"
+}

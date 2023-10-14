@@ -1,0 +1,21 @@
+{
+    "seeStats":"//h6[text()='See Stats']",
+    "wasLive": "//*[contains(text(),'Was Live')]",
+    "sportsSwimLanesText":"//p[contains(@data-testid, 'swimlane')]",
+    "homeTeamIcon":"//img[@alt='Home logo']",
+    "awayTeamIcon":"//img[@alt='Away logo']",
+    "teamStatsText":"//h4[text()='Team Stats']",
+    "firstGameTile":"(//*[@class='slick-track']/div)[1]",
+    "firstGameTileWithIndex":"(//*[@class='slick-track']/div)[index]",
+    "scheduleTextWithGameStart":"//*[contains(text(),'Game Starting @ ')]",
+    "futureProgramTime": "(//p[contains(text(),':')])[1]",
+    "closeIcon": "//*[local-name() = 'svg' and @data-testid='CloseIcon']",
+    "futureGame":"//*[@class='MuiTypography-root MuiTypography-body1 css-1g5utsp']",
+    "closeModal":"/html/body/div[5]/div[3]/div/div[1]/button",
+    "seeAll":"//div[@data-testid='swimlane-widget-see-all']",
+    "scrollRight":"//*[@data-testid='swimlane-right-arrow']",
+    "backButton":"//*[@data-testid='ArrowBackIcon']",
+    "rightArrow": "//*[@data-testid ='swimlane-right-arrow']",
+    "swimLaneTiles": "//*[@data-testid ='ArrowBackIcon']/../../following-sibling::div/div/div",
+    "closeButton": "//*[@data-testid='CloseIcon']/parent::button"
+}

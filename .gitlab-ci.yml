@@ -1,0 +1,79 @@
+
+variables:
+  DISH_PIPELINE_PLATFORMS:
+    value: "" 
+    description: "Enter the platform Name to trigger the pipeline!"
+  nrokuip:
+    value: ""
+    description: "Enter the new roku ip address for connecting device!"
+  E2E:
+    value: ""
+    description: "Enter false value for showing/getting the message/mail which is running on CD only"
+  rh_version:
+    value: ""
+    description: "Enter specific version you want to execute on roku"
+  fh_version:
+    value: ""
+    description: "Enter specific version you want to execute on firetv"
+
+
+stages:
+  - firetv_automation
+  - browser_automation
+  - rokutv_automation
+  - mobileBrowser_automation
+
+firetv_automation:
+  stage: firetv_automation
+  resource_group: test-automation
+  variables:
+    fh_version: $fh_version
+    E2E: $E2E
+    E2E_Branch_Name: $E2E_Branch_Name
+  trigger:
+    include:
+      - local: gitlab/firetv-cd.yml 
+    strategy: depend
+  rules:
+    - if: $CI_PIPELINE_SOURCE =~ /schedule|web|pipeline/ && $DISH_PIPELINE_PLATFORMS =~ 'Firetv' 
+
+browser_automation:
+  stage: browser_automation
+  resource_group: brow-test-automation
+  variables:
+    E2E: $E2E
+    E2E_Branch_Name: $E2E_Branch_Name
+  trigger:
+    include:
+      - local: gitlab/browser-cd.yml 
+    strategy: depend
+  rules:
+    - if: $CI_PIPELINE_SOURCE =~ /schedule|web|pipeline/ && $DISH_PIPELINE_PLATFORMS =~ /\bBrowser/
+
+rokutv_automation:
+  stage: rokutv_automation
+  resource_group: roku-test-automation
+  variables:
+    nrokuip: $nrokuip
+    buildtype: $buildtype
+    rh_version: $rh_version
+    E2E: $E2E
+    E2E_Branch_Name: $E2E_Branch_Name
+  trigger:
+    include:
+      - local: gitlab/rokutv-cd.yml 
+    strategy: depend
+  rules:
+    - if: $CI_PIPELINE_SOURCE =~ /schedule|web|pipeline/ && $DISH_PIPELINE_PLATFORMS =~ 'Rokutv' 
+
+mobileBrowser_automation:
+  stage: mobileBrowser_automation
+  resource_group: mobileBrowser_automation
+  trigger:
+    include:
+      - local: gitlab/mobileBrowser-cd.yml 
+    strategy: depend
+  rules:
+    - if: $CI_PIPELINE_SOURCE =~ /schedule|web|pipeline/ && $DISH_PIPELINE_PLATFORMS =~ /\bmobileBrowser/
+
+

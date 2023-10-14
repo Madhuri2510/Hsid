@@ -1,0 +1,4 @@
+{
+  "pipWindowPlayerId": "//*[contains(@resource-id,'surface_view')]",
+  "tvGuideMenu": "//android.widget.FrameLayout[contains(@resource-id,'classic_epg_view')]"
+}

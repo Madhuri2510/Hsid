@@ -1,0 +1,130 @@
+{
+  "onStreamPropertyLogo": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "logoPoster"}
+    ]
+  },
+  "homeTab": {
+    "elementData": [
+      {
+        "using": "attr",
+        "attribute": "uri",
+        "value": "pkg:/images/leftNavIcon/home.png"
+      }
+    ]
+  },
+  "tvGuideTab": {
+    "elementData": [
+      {
+        "using": "attr",
+        "attribute": "uri",
+        "value": "pkg:/images/leftNavIcon/tvGuide.png"
+      }
+    ]
+  },
+  "watchTab": {
+    "elementData": [
+      {
+        "using": "attr",
+        "attribute": "uri",
+        "value": "pkg:/images/leftNavIcon/Watch.png"
+      }
+    ]
+  },
+  "mystayTab": {
+    "elementData": [
+      {
+        "using": "attr",
+        "attribute": "uri",
+        "value": "pkg:/images/leftNavIcon/myStay.png"
+      }
+    ]
+  },
+  "castTab": {
+    "elementData": [
+      {
+        "using": "attr",
+        "attribute": "uri",
+        "value": "pkg:/images/leftNavIcon/cast.png"
+      }
+    ]
+  },
+  "hotelInfoTab": {
+    "elementData": [
+      {
+        "using": "attr",
+        "attribute": "uri",
+        "value": "pkg:/images/leftNavIcon/hotelInfo.png"
+      }
+    ]
+  },
+  "searchTab": {
+    "elementData": [
+      {
+        "using": "attr",
+        "attribute": "uri",
+        "value": "pkg:/images/leftNavIcon/search.png"
+      }
+    ]
+  },
+  "settingsTab": {
+    "elementData": [
+      {
+        "using": "attr",
+        "attribute": "uri",
+        "value": "pkg:/images/NewNavIcon/settings.png"
+      }
+    ]
+  },
+  "notificationHeading": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "headerLabel"}
+    ]
+  },
+  "HeroCarouselMoreInfoItem": {
+    "elementData": [{"using": "tag", "value": "HeroCarouselMoreInfoItem"}]
+  },
+  "messageLabel": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "messageLabel"}
+    ]
+  },
+  "temperatureGroup": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "temperatureGroup"}
+    ]
+  },
+  "weatherInWeekLayout": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "weatherInWeekLayout"}
+    ]
+  },
+  "okayBtn": {"elementData": [{"using": "text", "value": "OKAY"}]},
+  "advertLabel": {"elementData": [{"using": "text", "value": "ADVERT"}]},
+  "cityLabel": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "cityLabel"}
+    ]
+  },
+  "carouselItems": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "carouselItems"}
+    ]
+  },
+  "homepageTitle": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "titleLabel"}
+    ]
+  },
+  "subTitleLabel": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "subTitleLabel"}
+    ]
+  },
+  "infoCard": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "CommonInfoView"}
+    ]
+  },
+  "tileLabel": {"elementData": [{"using": "text", "value": "TILE_TEXT"}]}
+}

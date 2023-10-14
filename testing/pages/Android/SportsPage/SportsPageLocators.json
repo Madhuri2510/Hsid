@@ -1,0 +1,14 @@
+{
+  "sportsSwimLanesText": "//android.widget.TextView[contains(@resource-id,'title')]",
+  "homeTeamIcon": "//android.widget.FrameLayout[contains(@resource-id,'card')]//android.widget.ImageView[contains(@resource-id,'home_team_icon')]",
+  "awayTeamIcon": "//android.widget.FrameLayout[contains(@resource-id,'card')]//android.widget.ImageView[contains(@resource-id,'away_team_icon')]",
+  "teamStatsText": "//android.widget.FrameLayout[contains(@resource-id,'card')]//android.widget.TextView[contains(@resource-id,'title')]",
+  "scheduleTime": "//android.widget.TextView[contains(@resource-id,'schedule_time')]",
+  "futureSportsEventTile": "(//android.widget.TextView[contains(@resource-id,'schedule_time')]/parent::android.view.ViewGroup[contains(@resource-id,'container')])[1]",
+  "container": "//android.view.ViewGroup[contains(@resource-id,'container')]",
+  "seeStats": "//*[contains(@resource-id,'see_stats')]",
+  "scheduleTextWithGameStart": "//*[contains(@resource-id,'scheduleText') and contains(@text,'Game Starting @ ')]",
+  "scheduleTextWithWasLive": "//*[contains(@resource-id,'scheduleText') and contains(@text,'Was Live @ ')]",
+  "firstTileOfFirstRow": "(//*[contains(@resource-id,'swim_lane')])[1]/descendant::android.view.ViewGroup[1]",
+  "verifySportsSecondRow": "(//*[contains(@resource-id,'swim_lane')])[1]/descendant::android.view.ViewGroup["
+}

@@ -1,0 +1,37 @@
+{
+  "swimLanesText": {"elementData": [{"using": "text", "value": ""}]},
+  "sportsPanel": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "SportsCarouselPanel"}
+    ]
+  },
+  "loadingControls": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "busySpinnerControl"}
+    ]
+  },
+  "timeLabel": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "timeLabel"}
+    ]
+  },
+  "homeTeamIcon": {
+    "elementData": [{"using": "attr", "attribute": "name", "value": "homeLogo"}]
+  },
+  "awayTeamIcon": {
+    "elementData": [{"using": "attr", "attribute": "name", "value": "awayLogo"}]
+  },
+  "teamStatsText": {"elementData": [{"using": "text", "value": "Team Stats"}]},
+  "seeStatsButton": {"elementData": [{"using": "text", "value": "SEE STATS"}]},
+  "gameInfoView": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "GameInfoView"}
+    ]
+  },
+  "sportsSwimlaneRow": {
+    "elementData": [
+      {"using": "attr", "attribute": "name", "value": "sportsSwimlaneRowList"}
+    ]
+  },
+  "SwimlaneSportsGameItem":{"elementData":[{"using": "tag", "value":"SwimlaneSportsGameItem"}]}
+}

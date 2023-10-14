@@ -1,0 +1,26 @@
+{
+  "watchTile": "//*[contains(@resource-id,'link_text') and contains(@text,'Watch')]",
+  "watchIcon": "//android.widget.TextView[contains(@text,'Watch')]",
+  "watchMenu": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Watch')]/parent::android.view.ViewGroup",
+  "searchMenu": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Search')]/parent::android.view.ViewGroup",
+  "tvGuideMenu": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'TV Guide')]/parent::android.view.ViewGroup",
+  "onDemandMenu": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'On Demand')]/parent::android.view.ViewGroup",
+  "appsMenu": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Apps')]/parent::android.view.ViewGroup",
+  "myStayMenu": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'My Stay')]/parent::android.view.ViewGroup",
+  "settingsMenu": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Settings')]/parent::android.view.ViewGroup",
+  "hotelInfoMenu": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Hotel Info')]/parent::android.view.ViewGroup",
+  "homeMenu": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Home')]/parent::android.view.ViewGroup",
+  "sideNavBarExpanded": "//android.view.ViewGroup[@focused='true']/parent::androidx.recyclerview.widget.RecyclerView[@resource-id,'side_menu_recycler_view']/parent::android.view.ViewGroup/parent::android.widget.FrameLayout[@resource-id,'side_navigation_view']",
+
+  "watchMenuFocused": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Watch')]/parent::android.view.ViewGroup[@focused='true']",
+  "searchMenuFocused": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Search')]/parent::android.view.ViewGroup[@focused='true']",
+  "tvGuideMenuFocused": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'TV Guide')]/parent::android.view.ViewGroup[@focused='true']",
+  "onDemandMenuFocused": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'On Demand')]/parent::android.view.ViewGroup[@focused='true']",
+  "appsMenuFocused": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Apps')]/parent::android.view.ViewGroup[@focused='true']",
+  "myStayMenuFocused": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'My Stay')]/parent::android.view.ViewGroup[@focused='true']",
+  "settingsMenuFocused": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Settings')]/parent::android.view.ViewGroup[@focused='true']",
+  "hotelInfoMenuFocused": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Hotel Info')]/parent::android.view.ViewGroup[@focused='true']",
+  "homeMenuFocused": "//*[contains(@resource-id,'side_nav_menu_title') and contains(@text,'Home')]/parent::android.view.ViewGroup[@focused='true']",
+  "sideNavBar": "//android.widget.TextView[contains(@resource-id,'side_nav_menu_title')]",
+  "focusedMenuItem": "(//*[contains(@resource-id,'side_nav_menu_title')]/parent::android.view.ViewGroup)[@focused='true']/android.widget.TextView"
+}

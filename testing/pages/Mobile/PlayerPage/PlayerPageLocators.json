@@ -1,0 +1,20 @@
+{
+  "closeVideoBtn": "//img[@alt='Close Player']",
+  "volume_btn": "//img[@alt='Volume']",
+  "toggle_fullscreen_btn": "//img[@alt='Toggle Fullscreen']",
+  "caption_btn": "//img[@alt='Caption']",
+  "channel_logo": "//img[@alt='Channel Logo']",
+  "asset_name": "//div[@class='_2dL4KgTsQ0QEDgX9WDSO5g']/div[3]",
+  "playerCaptionButton": "//div[@id='captions-container']",
+  "playerTimerCounter": "//div[@id='left-time-label-container']/div",
+  "bitmovinPlayer": "#bitmovinplayer-video-dish-bitmovin-player",
+  "assetDescriptionInPlayerScreen": "//button[@id='PLAYER_CLOSE_BTN']/following-sibling::div[1]",
+  "miniGuideButton": "(//div[@id='captions-container']/following-sibling::button)[1]",
+  "downArrowInMiniGuide": "//div[@direction='down']",
+  "watchNowButtonInMiniGuide": "//button[@id='WATCH_NOW_BUTTON']",
+  "playerControlsContainer": "//button[@id='PLAYER_CLOSE_BTN']/parent::div/parent::div",
+  "unratedContentPopup": "//p[contains(text(),'You must either Sign Up or Login to view content of this rating.')]",
+  "liveTag": "//span[contains(text(),'LIVE')]",
+  "channelLogo": "//img[@alt='Channel Logo']",
+  "spinnerIcon": "//img[@alt='Spinner Icon']"
+}

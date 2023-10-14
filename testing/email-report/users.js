@@ -1,0 +1,27 @@
+module.exports = {
+  sender: 'onstreamautomationreport@gmail.com',
+  all: [
+    'srikanth.vanama@dish.com',
+    'srijithsrinivas.prab@dish.com',
+    'debajyoti.bose@dish.com',
+    'madhuri.goswami@dish.com',
+    'vasuki.prasadvn@dish.com',
+    'manojkumar.vudatha@dish.com',
+    'rutul.tank@dish.com',
+    'jiaullah.sm@dish.com',
+    'priyanka.bhadauria@dish.com',
+    'son.nguyenhoang@dish.com',
+    'vang.duongthibich@dish.com',
+    'sanket.khandelwal@dish.com',
+    'arunagowda.c@dish.com',
+    'hariharan.subramania@dish.com',
+    'bhavana.manjunatha@dish.com',
+    'rahul.r@dish.com',
+    'girish.pm@dish.com',
+  ],
+  cc: [
+    'rahulreddy.chandupat@dish.com',
+    'laxminarayana.dalim@dish.com',
+    'santoshkumar.hattar@dish.com',
+  ],
+};

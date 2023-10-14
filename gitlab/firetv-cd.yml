@@ -1,0 +1,128 @@
+default:
+  tags:
+    - dc-d-aw2-large-ss
+stages:
+  - download_artifact
+  - Test_automation
+  - mail-report
+     
+download_artifact:
+  resource_group: firetv-test-automation
+  stage: download_artifact
+  image: devopscoe-container.docker.imovetv.com/devops-jfrog-cli-alpine:latest
+  before_script:
+    - apk add --no-cache --upgrade bash
+    - jfrog config add artifactory-server --artifactory-url=$CI_REGISTRY --user=$CI_USER --password=$CI_USER_KEY --interactive=false
+    - jfrog rt ping
+  script: 
+    - |- 
+        if [[ $fh_version != "latest" ]]; then
+          jfrog rt dl onstream/onstream-firetv-client/$fh_version/
+        else
+          jfrog rt dl onstream/onstream-firetv-client/ --sort-by=created --sort-order=desc --limit=4
+        fi     
+        ls ./onstream-firetv-client | tee version.txt
+        version=`cat version.txt`
+        echo $version
+        cp -r onstream-firetv-client/$version/dish_onstream_${version}_debug.apk ./dish_onstream_latest.apk
+        cd onstream-firetv-client
+        ls -al
+  artifacts:
+    paths:
+      - $CI_PROJECT_DIR/onstream-firetv-client
+      - $CI_PROJECT_DIR/version.txt
+      - $CI_PROJECT_DIR/dish_onstream_latest.apk
+  
+Test_automation:
+  resource_group: firetv-test-automation
+  stage: Test_automation
+  tags:
+    - Onstream_automation_shell
+  dependencies:
+    - download_artifact
+  script:
+    - |-
+       "$CI_JOB_ID" >> prejobid;
+    - dir
+    - adb devices -l
+    - adb uninstall tv.accedo.xdk.dishtv.debug
+    - adb install -r dish_onstream_latest.apk
+    - md mochawesome-report;
+    - cd testing;
+    - |-
+        IF ($Firetv_ModuleR -ne 'null') { 
+          $Firetv_ModuleR_array = $Firetv_ModuleR.Split(","); 
+          for ($i = 0; $i -lt $Firetv_ModuleR_array.length; $i ++) { 
+            Write-Host $Firetv_ModuleR_array[$i]; 
+            $b = $Firetv_ModuleR_array[$i]; 
+            (Get-Content testcases/OnStreamTestCases/${b}_test.js) -replace "Feature","xFeature" | Out-File -encoding ASCII testcases/OnStreamTestCases/${b}_test.js; 
+            } 
+          }
+        npm install;
+        IF ($E2E -eq 'TRUE') {
+          IF ($E2E_Branch_Name -eq 'develop'){
+            yarn codecept-run-onstream-fire-tv --grep sanity;
+            }
+          ELSE {
+            yarn codecept-run-onstream-fire-tv --grep '(?=.*p1)(?=.*FireTv)';
+            }
+        }
+        ELSE {
+          yarn codecept-run-onstream-fire-tv --grep '(?=.*p1)(?=.*FireTv)';
+        }
+        taskkill /im adb.exe /f;
+        dir output;
+        mv output/* ../mochawesome-report;
+        dir ../mochawesome-report;
+  artifacts:
+    paths:
+      - prejobid
+      - mochawesome-report
+    when: always
+    expire_in: 30 days
+  
+mail-report:
+  resource_group: firetv-test-automation
+  stage: mail-report
+  image: onstream-cmp.docker.imovetv.com/automate-mail-report:latest
+  dependencies:
+    - download_artifact
+    - Test_automation
+  before_script:
+    - apt-get update && apt-get install -y curl zip jq
+  script:
+    - ls 
+    - version=`cat version.txt`
+    - echo "$version"
+    - cat prejobid
+    - jobid=`cat prejobid`
+    - jobidn=`echo $jobid | sed 's/\(.\{2\}\)//' | tr -d -c 0-9`
+    - echo "$jobidn"
+    - export report="${CI_PROJECT_URL}/-/jobs/$jobidn/artifacts/browse"
+    - echo $report
+    - mv ./mochawesome-report /app
+    - export reciever=$firetv_reciever
+    - echo $E2E
+    - |- 
+        if [[ $E2E == "TRUE"  ]]; then
+          case "$E2E_Branch_Name" in
+          'develop') export cicd="SANITY"
+          ;;
+          *) export cicd="CICD PIPELINE"
+          ;;
+          esac
+        else
+          export cicd="CD PIPELINE"
+          echo $cicd
+        fi
+    - cd /app
+    - jq --arg firetv_link $firetv_analysis_link -c '.fireTV = $firetv_link' ./email-report/reportLink.json > updatelink.json
+    - mv updatelink.json ./email-report/reportLink.json && rm -rf updatelink.json
+    - node sendMail.js FIRETV $version | tee $CI_PROJECT_DIR/message.txt
+    - cd $CI_PROJECT_DIR
+    - |-
+        if grep -q -e "FIRETV" message.txt; then
+          source gitlab/script.sh;
+          message=`cat message.txt`;
+          SendMessageToHangoutsChat "$message";  
+        fi

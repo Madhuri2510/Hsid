@@ -1,0 +1,13 @@
+{
+  "player_page": "//android.view.View[contains(@resource-id,'surface_view')]",
+  "captions_btn": "//android.widget.ImageButton[contains(@resource-id,'btn_captions')]",
+  "seekBar": "//android.widget.SeekBar[contains(@resource-id,'seek_bar')]",
+  "tvDuration": "//android.widget.SeekBar[contains(@resource-id,'tv_duration')]",
+  "home": "//android.widget.TextView[@text='Home']",
+  "tvProgramRating": "//*[contains(@resource-id,'tv_program_rating')]",
+  "tvProgramDescription": "//*[contains(@resource-id,'tv_program_description')]",
+  "liveTag": "//android.widget.LinearLayout[contains(@resource-id,'live_tag')]",
+  "channelLogo": "//android.widget.ImageView[contains(@resource-id,'iv_channel_logo')]",
+  "tvSchedule": "//*[contains(@resource-id,'tv_schedule')]",
+  "spinnerIcon": "//*[contains(@resource-id,'progressBar')]"
+}

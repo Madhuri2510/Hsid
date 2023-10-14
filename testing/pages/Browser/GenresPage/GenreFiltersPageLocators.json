@@ -1,0 +1,10 @@
+{
+    "tvGuideGenreFilters": "(//div[@id='classic-guide-container']/div/div/button)[index]",
+    "tvGuideGenreFiltersWithoutIndex": "(//div[@id='classic-guide-container']/div/div/button)",
+    "tvGuideAllChannelFilter": "//button[text()='ALL CHANNELS']",
+    "tvGuideFilters": "//*[contains(@resource-id,'genre_name_button') and contains(@text,'",
+    "guideFirstTile": "(//div[@id='classic-guide']/div/div)[1]",
+    "noFavoritesAdded": "(//*[contains(@resource-id,'fav_genre_error_title')])",
+    "liveProgramImage":  "(//*[contains(@resource-id,'liveProgramImage')])[",
+    "programTitle": "(//*[contains(@resource-id,'programTitle')])[1]"
+}

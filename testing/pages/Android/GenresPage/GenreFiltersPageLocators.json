@@ -1,0 +1,9 @@
+{
+  "tvGuideGenreFilters": "(//*[contains(@resource-id,'genre_name_button')])",
+  "AllChannelsGenreFilter": "(//*[contains(@resource-id,'genre_name_button') and @text='ALL CHANNELS'])/parent::android.view.ViewGroup",
+  "tvGuideFilters": "//*[contains(@resource-id,'genre_name_button') and contains(@text,'",
+  "guideFirstTile": "(//*[contains(@resource-id,'parentLayout')])[2]",
+  "noFavoritesAdded": "(//*[contains(@resource-id,'fav_genre_error_title')])",
+  "liveProgramImage": "(//*[contains(@resource-id,'liveProgramImage')])[",
+  "programTitle": "(//*[contains(@resource-id,'programTitle')])[1]"
+}

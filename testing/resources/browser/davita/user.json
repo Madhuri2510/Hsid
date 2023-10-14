@@ -1,0 +1,37 @@
+[
+    {
+        "username": "davita500@os.com",
+        "password": "Davita@123",
+        "type": "accountDetails"
+    },
+    {
+        "username": "davita50@os.com",
+        "password": "Davita@123",
+        "type": "changePin"
+    },
+    {
+        "username": "davita100@os.com",
+        "password": "Davita@123",
+        "type": "parentalLock"
+    },
+    {
+        "username": "davita20@os.com",
+        "password": "Davita@123",
+        "type": "beta"
+    },
+    {
+        "username": "watchLater@os.com",
+        "password": "Onstream@123",
+        "type": "watchLater"
+    },
+    {
+        "username": "davita03@os.com",
+        "password": "Davita@123",
+        "type": "accountDetailsDavita"
+    },
+    {
+        "username": "signIn@os.com",
+        "password": "Onstream@123",
+        "type": "signIn"
+    }
+]
